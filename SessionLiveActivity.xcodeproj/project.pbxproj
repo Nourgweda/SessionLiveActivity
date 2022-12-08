@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33DE7F9A02574CF8DE2F5FBC /* Pods_SessionLiveActivityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C890BBE0505963D3448A5374 /* Pods_SessionLiveActivityTests.framework */; };
+		94D52458A6E32AE2B91D4E4D /* Pods_SessionLiveActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3347F529F475A757912F22B /* Pods_SessionLiveActivity.framework */; };
 		C75FAF0E293DF2DF002D0C2A /* SessionLiveActivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF0D293DF2DF002D0C2A /* SessionLiveActivityApp.swift */; };
 		C75FAF10293DF2DF002D0C2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF0F293DF2DF002D0C2A /* ContentView.swift */; };
 		C75FAF12293DF2E3002D0C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75FAF11293DF2E3002D0C2A /* Assets.xcassets */; };
@@ -14,6 +16,21 @@
 		C75FAF1F293DF2E3002D0C2A /* SessionLiveActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF1E293DF2E3002D0C2A /* SessionLiveActivityTests.swift */; };
 		C75FAF29293DF2E3002D0C2A /* SessionLiveActivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF28293DF2E3002D0C2A /* SessionLiveActivityUITests.swift */; };
 		C75FAF2B293DF2E3002D0C2A /* SessionLiveActivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF2A293DF2E3002D0C2A /* SessionLiveActivityUITestsLaunchTests.swift */; };
+		C75FAF41293DF3BD002D0C2A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75FAF40293DF3BD002D0C2A /* WidgetKit.framework */; };
+		C75FAF43293DF3BD002D0C2A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75FAF42293DF3BD002D0C2A /* SwiftUI.framework */; };
+		C75FAF46293DF3BD002D0C2A /* SessionWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF45293DF3BD002D0C2A /* SessionWidgetBundle.swift */; };
+		C75FAF48293DF3BD002D0C2A /* SessionWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF47293DF3BD002D0C2A /* SessionWidgetLiveActivity.swift */; };
+		C75FAF4A293DF3BD002D0C2A /* SessionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF49293DF3BD002D0C2A /* SessionWidget.swift */; };
+		C75FAF4C293DF3BF002D0C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75FAF4B293DF3BF002D0C2A /* Assets.xcassets */; };
+		C75FAF50293DF3BF002D0C2A /* SessionWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C75FAF3E293DF3BD002D0C2A /* SessionWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C75FAF56293DF3F4002D0C2A /* TimerAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF55293DF3F4002D0C2A /* TimerAttribute.swift */; };
+		C75FAF58293DF45A002D0C2A /* SessionLiveActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF57293DF45A002D0C2A /* SessionLiveActivityView.swift */; };
+		C75FAF59293DF529002D0C2A /* TimerAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF55293DF3F4002D0C2A /* TimerAttribute.swift */; };
+		C75FAF5A293DF554002D0C2A /* SessionLiveActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF57293DF45A002D0C2A /* SessionLiveActivityView.swift */; };
+		C75FAF5C293DF69A002D0C2A /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF5B293DF69A002D0C2A /* SessionViewModel.swift */; };
+		C75FAF5E293DF719002D0C2A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAF5D293DF719002D0C2A /* LaunchView.swift */; };
+		F2790B9E4F766F92E8551186 /* Pods_SessionWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA3A3959FD77C27637933B9 /* Pods_SessionWidgetExtension.framework */; };
+		F5CA2C97BC1F7CD8DE306FDE /* Pods_SessionLiveActivity_SessionLiveActivityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BC486B3263BB6BC4C16D25 /* Pods_SessionLiveActivity_SessionLiveActivityUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +48,39 @@
 			remoteGlobalIDString = C75FAF09293DF2DF002D0C2A;
 			remoteInfo = SessionLiveActivity;
 		};
+		C75FAF4E293DF3BF002D0C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75FAF02293DF2DE002D0C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75FAF3D293DF3BD002D0C2A;
+			remoteInfo = SessionWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C75FAF54293DF3BF002D0C2A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C75FAF50293DF3BF002D0C2A /* SessionWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		017ED76EA47745314245EA43 /* Pods-SessionLiveActivityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionLiveActivityTests.release.xcconfig"; path = "Target Support Files/Pods-SessionLiveActivityTests/Pods-SessionLiveActivityTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D6BBB0BC8D931982843F7FD /* Pods-SessionLiveActivity-SessionLiveActivityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionLiveActivity-SessionLiveActivityUITests.release.xcconfig"; path = "Target Support Files/Pods-SessionLiveActivity-SessionLiveActivityUITests/Pods-SessionLiveActivity-SessionLiveActivityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39BC486B3263BB6BC4C16D25 /* Pods_SessionLiveActivity_SessionLiveActivityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionLiveActivity_SessionLiveActivityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB297636F66F7793F375F69 /* Pods-SessionLiveActivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionLiveActivity.release.xcconfig"; path = "Target Support Files/Pods-SessionLiveActivity/Pods-SessionLiveActivity.release.xcconfig"; sourceTree = "<group>"; };
+		87BF7FE6E2465FC7606E3854 /* Pods-SessionWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-SessionWidgetExtension/Pods-SessionWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		98BC6D2A94CE10A9C9413EE8 /* Pods-SessionLiveActivityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionLiveActivityTests.debug.xcconfig"; path = "Target Support Files/Pods-SessionLiveActivityTests/Pods-SessionLiveActivityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98F9A79BB4ACC3DE1DBDB6B6 /* Pods-SessionLiveActivity-SessionLiveActivityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionLiveActivity-SessionLiveActivityUITests.debug.xcconfig"; path = "Target Support Files/Pods-SessionLiveActivity-SessionLiveActivityUITests/Pods-SessionLiveActivity-SessionLiveActivityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA3A3959FD77C27637933B9 /* Pods_SessionWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D937994ECBA0D1BDFFEB00 /* Pods-SessionWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-SessionWidgetExtension/Pods-SessionWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		C75FAF0A293DF2DF002D0C2A /* SessionLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SessionLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75FAF0D293DF2DF002D0C2A /* SessionLiveActivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLiveActivityApp.swift; sourceTree = "<group>"; };
 		C75FAF0F293DF2DF002D0C2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +91,21 @@
 		C75FAF24293DF2E3002D0C2A /* SessionLiveActivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SessionLiveActivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75FAF28293DF2E3002D0C2A /* SessionLiveActivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLiveActivityUITests.swift; sourceTree = "<group>"; };
 		C75FAF2A293DF2E3002D0C2A /* SessionLiveActivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLiveActivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C75FAF3E293DF3BD002D0C2A /* SessionWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SessionWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75FAF40293DF3BD002D0C2A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C75FAF42293DF3BD002D0C2A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C75FAF45293DF3BD002D0C2A /* SessionWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWidgetBundle.swift; sourceTree = "<group>"; };
+		C75FAF47293DF3BD002D0C2A /* SessionWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		C75FAF49293DF3BD002D0C2A /* SessionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWidget.swift; sourceTree = "<group>"; };
+		C75FAF4B293DF3BF002D0C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C75FAF4D293DF3BF002D0C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75FAF55293DF3F4002D0C2A /* TimerAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttribute.swift; sourceTree = "<group>"; };
+		C75FAF57293DF45A002D0C2A /* SessionLiveActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLiveActivityView.swift; sourceTree = "<group>"; };
+		C75FAF5B293DF69A002D0C2A /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		C75FAF5D293DF719002D0C2A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		C890BBE0505963D3448A5374 /* Pods_SessionLiveActivityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionLiveActivityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37D40C8D63CC55F787D3E53 /* Pods-SessionLiveActivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionLiveActivity.debug.xcconfig"; path = "Target Support Files/Pods-SessionLiveActivity/Pods-SessionLiveActivity.debug.xcconfig"; sourceTree = "<group>"; };
+		F3347F529F475A757912F22B /* Pods_SessionLiveActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionLiveActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D52458A6E32AE2B91D4E4D /* Pods_SessionLiveActivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DE7F9A02574CF8DE2F5FBC /* Pods_SessionLiveActivityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,19 +129,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CA2C97BC1F7CD8DE306FDE /* Pods_SessionLiveActivity_SessionLiveActivityUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75FAF3B293DF3BD002D0C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75FAF43293DF3BD002D0C2A /* SwiftUI.framework in Frameworks */,
+				C75FAF41293DF3BD002D0C2A /* WidgetKit.framework in Frameworks */,
+				F2790B9E4F766F92E8551186 /* Pods_SessionWidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042B117E63670BED4E2750FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D37D40C8D63CC55F787D3E53 /* Pods-SessionLiveActivity.debug.xcconfig */,
+				3CB297636F66F7793F375F69 /* Pods-SessionLiveActivity.release.xcconfig */,
+				98F9A79BB4ACC3DE1DBDB6B6 /* Pods-SessionLiveActivity-SessionLiveActivityUITests.debug.xcconfig */,
+				1D6BBB0BC8D931982843F7FD /* Pods-SessionLiveActivity-SessionLiveActivityUITests.release.xcconfig */,
+				98BC6D2A94CE10A9C9413EE8 /* Pods-SessionLiveActivityTests.debug.xcconfig */,
+				017ED76EA47745314245EA43 /* Pods-SessionLiveActivityTests.release.xcconfig */,
+				A8D937994ECBA0D1BDFFEB00 /* Pods-SessionWidgetExtension.debug.xcconfig */,
+				87BF7FE6E2465FC7606E3854 /* Pods-SessionWidgetExtension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C75FAF01293DF2DE002D0C2A = {
 			isa = PBXGroup;
 			children = (
 				C75FAF0C293DF2DF002D0C2A /* SessionLiveActivity */,
 				C75FAF1D293DF2E3002D0C2A /* SessionLiveActivityTests */,
 				C75FAF27293DF2E3002D0C2A /* SessionLiveActivityUITests */,
+				C75FAF44293DF3BD002D0C2A /* SessionWidget */,
+				C75FAF3F293DF3BD002D0C2A /* Frameworks */,
 				C75FAF0B293DF2DF002D0C2A /* Products */,
+				042B117E63670BED4E2750FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +181,7 @@
 				C75FAF0A293DF2DF002D0C2A /* SessionLiveActivity.app */,
 				C75FAF1A293DF2E3002D0C2A /* SessionLiveActivityTests.xctest */,
 				C75FAF24293DF2E3002D0C2A /* SessionLiveActivityUITests.xctest */,
+				C75FAF3E293DF3BD002D0C2A /* SessionWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +189,9 @@
 		C75FAF0C293DF2DF002D0C2A /* SessionLiveActivity */ = {
 			isa = PBXGroup;
 			children = (
+				C75FAF39293DF347002D0C2A /* ViewModel */,
+				C75FAF38293DF341002D0C2A /* View */,
+				C75FAF37293DF33A002D0C2A /* Model */,
 				C75FAF0D293DF2DF002D0C2A /* SessionLiveActivityApp.swift */,
 				C75FAF0F293DF2DF002D0C2A /* ContentView.swift */,
 				C75FAF11293DF2E3002D0C2A /* Assets.xcassets */,
@@ -127,6 +225,56 @@
 			path = SessionLiveActivityUITests;
 			sourceTree = "<group>";
 		};
+		C75FAF37293DF33A002D0C2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C75FAF55293DF3F4002D0C2A /* TimerAttribute.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C75FAF38293DF341002D0C2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C75FAF57293DF45A002D0C2A /* SessionLiveActivityView.swift */,
+				C75FAF5D293DF719002D0C2A /* LaunchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C75FAF39293DF347002D0C2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C75FAF5B293DF69A002D0C2A /* SessionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C75FAF3F293DF3BD002D0C2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75FAF40293DF3BD002D0C2A /* WidgetKit.framework */,
+				C75FAF42293DF3BD002D0C2A /* SwiftUI.framework */,
+				F3347F529F475A757912F22B /* Pods_SessionLiveActivity.framework */,
+				39BC486B3263BB6BC4C16D25 /* Pods_SessionLiveActivity_SessionLiveActivityUITests.framework */,
+				C890BBE0505963D3448A5374 /* Pods_SessionLiveActivityTests.framework */,
+				9FA3A3959FD77C27637933B9 /* Pods_SessionWidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C75FAF44293DF3BD002D0C2A /* SessionWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C75FAF45293DF3BD002D0C2A /* SessionWidgetBundle.swift */,
+				C75FAF47293DF3BD002D0C2A /* SessionWidgetLiveActivity.swift */,
+				C75FAF49293DF3BD002D0C2A /* SessionWidget.swift */,
+				C75FAF4B293DF3BF002D0C2A /* Assets.xcassets */,
+				C75FAF4D293DF3BF002D0C2A /* Info.plist */,
+			);
+			path = SessionWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,13 +282,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C75FAF2E293DF2E3002D0C2A /* Build configuration list for PBXNativeTarget "SessionLiveActivity" */;
 			buildPhases = (
+				B12F642C57DE3239DFA40361 /* [CP] Check Pods Manifest.lock */,
 				C75FAF06293DF2DF002D0C2A /* Sources */,
 				C75FAF07293DF2DF002D0C2A /* Frameworks */,
 				C75FAF08293DF2DF002D0C2A /* Resources */,
+				C75FAF54293DF3BF002D0C2A /* Embed Foundation Extensions */,
+				9CD711D8776D11FECF36846D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C75FAF4F293DF3BF002D0C2A /* PBXTargetDependency */,
 			);
 			name = SessionLiveActivity;
 			productName = SessionLiveActivity;
@@ -151,6 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C75FAF31293DF2E3002D0C2A /* Build configuration list for PBXNativeTarget "SessionLiveActivityTests" */;
 			buildPhases = (
+				5E5688F0E94F59FFDBF6778D /* [CP] Check Pods Manifest.lock */,
 				C75FAF16293DF2E3002D0C2A /* Sources */,
 				C75FAF17293DF2E3002D0C2A /* Frameworks */,
 				C75FAF18293DF2E3002D0C2A /* Resources */,
@@ -169,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C75FAF34293DF2E3002D0C2A /* Build configuration list for PBXNativeTarget "SessionLiveActivityUITests" */;
 			buildPhases = (
+				4B60E6B435EAE9ADCCC8B300 /* [CP] Check Pods Manifest.lock */,
 				C75FAF20293DF2E3002D0C2A /* Sources */,
 				C75FAF21293DF2E3002D0C2A /* Frameworks */,
 				C75FAF22293DF2E3002D0C2A /* Resources */,
+				735E4F173DE2782A7E01736F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +337,24 @@
 			productName = SessionLiveActivityUITests;
 			productReference = C75FAF24293DF2E3002D0C2A /* SessionLiveActivityUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C75FAF3D293DF3BD002D0C2A /* SessionWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75FAF51293DF3BF002D0C2A /* Build configuration list for PBXNativeTarget "SessionWidgetExtension" */;
+			buildPhases = (
+				A9A8248703F934FBDECC7B1E /* [CP] Check Pods Manifest.lock */,
+				C75FAF3A293DF3BD002D0C2A /* Sources */,
+				C75FAF3B293DF3BD002D0C2A /* Frameworks */,
+				C75FAF3C293DF3BD002D0C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SessionWidgetExtension;
+			productName = SessionWidgetExtension;
+			productReference = C75FAF3E293DF3BD002D0C2A /* SessionWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,6 +377,9 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = C75FAF09293DF2DF002D0C2A;
 					};
+					C75FAF3D293DF3BD002D0C2A = {
+						CreatedOnToolsVersion = 14.1;
+					};
 				};
 			};
 			buildConfigurationList = C75FAF05293DF2DE002D0C2A /* Build configuration list for PBXProject "SessionLiveActivity" */;
@@ -222,6 +398,7 @@
 				C75FAF09293DF2DF002D0C2A /* SessionLiveActivity */,
 				C75FAF19293DF2E3002D0C2A /* SessionLiveActivityTests */,
 				C75FAF23293DF2E3002D0C2A /* SessionLiveActivityUITests */,
+				C75FAF3D293DF3BD002D0C2A /* SessionWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,14 +427,151 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C75FAF3C293DF3BD002D0C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75FAF4C293DF3BF002D0C2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B60E6B435EAE9ADCCC8B300 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionLiveActivity-SessionLiveActivityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5688F0E94F59FFDBF6778D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionLiveActivityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		735E4F173DE2782A7E01736F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SessionLiveActivity-SessionLiveActivityUITests/Pods-SessionLiveActivity-SessionLiveActivityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SessionLiveActivity-SessionLiveActivityUITests/Pods-SessionLiveActivity-SessionLiveActivityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionLiveActivity-SessionLiveActivityUITests/Pods-SessionLiveActivity-SessionLiveActivityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD711D8776D11FECF36846D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SessionLiveActivity/Pods-SessionLiveActivity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SessionLiveActivity/Pods-SessionLiveActivity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionLiveActivity/Pods-SessionLiveActivity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A8248703F934FBDECC7B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B12F642C57DE3239DFA40361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionLiveActivity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C75FAF06293DF2DF002D0C2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75FAF58293DF45A002D0C2A /* SessionLiveActivityView.swift in Sources */,
+				C75FAF5E293DF719002D0C2A /* LaunchView.swift in Sources */,
+				C75FAF5C293DF69A002D0C2A /* SessionViewModel.swift in Sources */,
 				C75FAF10293DF2DF002D0C2A /* ContentView.swift in Sources */,
+				C75FAF56293DF3F4002D0C2A /* TimerAttribute.swift in Sources */,
 				C75FAF0E293DF2DF002D0C2A /* SessionLiveActivityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +593,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C75FAF3A293DF3BD002D0C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75FAF59293DF529002D0C2A /* TimerAttribute.swift in Sources */,
+				C75FAF5A293DF554002D0C2A /* SessionLiveActivityView.swift in Sources */,
+				C75FAF46293DF3BD002D0C2A /* SessionWidgetBundle.swift in Sources */,
+				C75FAF48293DF3BD002D0C2A /* SessionWidgetLiveActivity.swift in Sources */,
+				C75FAF4A293DF3BD002D0C2A /* SessionWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +617,11 @@
 			isa = PBXTargetDependency;
 			target = C75FAF09293DF2DF002D0C2A /* SessionLiveActivity */;
 			targetProxy = C75FAF25293DF2E3002D0C2A /* PBXContainerItemProxy */;
+		};
+		C75FAF4F293DF3BF002D0C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75FAF3D293DF3BD002D0C2A /* SessionWidgetExtension */;
+			targetProxy = C75FAF4E293DF3BF002D0C2A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,14 +742,18 @@
 		};
 		C75FAF2F293DF2E3002D0C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37D40C8D63CC55F787D3E53 /* Pods-SessionLiveActivity.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SessionLiveActivity/Preview Content\"";
+				DEVELOPMENT_TEAM = U98MB87JNM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,14 +774,18 @@
 		};
 		C75FAF30293DF2E3002D0C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB297636F66F7793F375F69 /* Pods-SessionLiveActivity.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SessionLiveActivity/Preview Content\"";
+				DEVELOPMENT_TEAM = U98MB87JNM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +806,7 @@
 		};
 		C75FAF32293DF2E3002D0C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98BC6D2A94CE10A9C9413EE8 /* Pods-SessionLiveActivityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +826,7 @@
 		};
 		C75FAF33293DF2E3002D0C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017ED76EA47745314245EA43 /* Pods-SessionLiveActivityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +846,7 @@
 		};
 		C75FAF35293DF2E3002D0C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F9A79BB4ACC3DE1DBDB6B6 /* Pods-SessionLiveActivity-SessionLiveActivityUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +864,7 @@
 		};
 		C75FAF36293DF2E3002D0C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6BBB0BC8D931982843F7FD /* Pods-SessionLiveActivity-SessionLiveActivityUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +877,62 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SessionLiveActivity;
+			};
+			name = Release;
+		};
+		C75FAF52293DF3BF002D0C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D937994ECBA0D1BDFFEB00 /* Pods-SessionWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U98MB87JNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SessionWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SessionWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrialLiveActivity.SessionLiveActivity.SessionWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C75FAF53293DF3BF002D0C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87BF7FE6E2465FC7606E3854 /* Pods-SessionWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U98MB87JNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SessionWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SessionWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrialLiveActivity.SessionLiveActivity.SessionWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -572,6 +971,15 @@
 			buildConfigurations = (
 				C75FAF35293DF2E3002D0C2A /* Debug */,
 				C75FAF36293DF2E3002D0C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C75FAF51293DF3BF002D0C2A /* Build configuration list for PBXNativeTarget "SessionWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75FAF52293DF3BF002D0C2A /* Debug */,
+				C75FAF53293DF3BF002D0C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
